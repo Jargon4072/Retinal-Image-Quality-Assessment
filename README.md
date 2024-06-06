@@ -1,5 +1,18 @@
 # Retinal-Image-Quality-Assessment
 Analyse adequacy of a retinal image
+Steps:
+* Read in image and crop and resize it.
+* Splitting into 7 regions of interest
+* Converting to CIE*Lab space
+* Calculating mean and standard deviation
+* Splitting into the three channels L,a,b
+* Calculating the skew for each of the three channels L,a,b
+* Calculating the kurtosis for each of the three channels L,a,b
+* Calculating the variance for each of the three channels L,a,b
+* Calculating the spatial frequency for each of the three channels L,a,b
+* Calculating the contrast and entropy(Haralick features) for each of the three channels L,a,b (via the GLCM (Gray Level Co-occurence Matrix))
+* saving to text file
+* use RF model for prediction
 
 ## Source
 * <b>feature.cpp</b><br>
